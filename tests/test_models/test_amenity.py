@@ -6,11 +6,15 @@ Contains the TestAmenityDocs classes
 from datetime import datetime
 import inspect
 import models
+import json
 from models import amenity
 from models.base_model import BaseModel
 import pep8
 import unittest
-Amenity = amenity.Amenity
+
+Amenity = models.amenity.Amenity
+BaseModel = models.base_model.BaseModel
+STORAGE_TYPE = environ.get('HBNB_TYPE_STORAGE')
 
 
 class TestAmenityDocs(unittest.TestCase):
