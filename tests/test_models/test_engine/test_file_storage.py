@@ -114,7 +114,7 @@ class TestFileStorage(unittest.TestCase):
             js = f.read()
         self.assertEqual(json.loads(string), json.loads(js))
 
-   def test_get_dbstorage(self):
+    def test_get_dbstorage(self):
         """Test get storage engine with valid data"""
         obj = State(name="Some state")
         obj.save()
